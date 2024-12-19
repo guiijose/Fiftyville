@@ -1,0 +1,78 @@
+Table: crime_scene_reports
+  Column: id, Type: INTEGER
+  Column: year, Type: INTEGER
+  Column: month, Type: INTEGER
+  Column: day, Type: INTEGER
+  Column: street, Type: TEXT
+  Column: description, Type: TEXT
+
+Table: interviews
+  Column: id, Type: INTEGER
+  Column: name, Type: TEXT
+  Column: year, Type: INTEGER
+  Column: month, Type: INTEGER
+  Column: day, Type: INTEGER
+  Column: transcript, Type: TEXT
+
+Table: atm_transactions
+  Column: id, Type: INTEGER
+  Column: account_number, Type: INTEGER
+  Column: year, Type: INTEGER
+  Column: month, Type: INTEGER
+  Column: day, Type: INTEGER
+  Column: atm_location, Type: TEXT
+  Column: transaction_type, Type: TEXT
+  Column: amount, Type: INTEGER
+
+Table: bank_accounts
+  Column: account_number, Type: INTEGER
+  Column: person_id, Type: INTEGER
+  Column: creation_year, Type: INTEGER
+
+Table: airports
+  Column: id, Type: INTEGER
+  Column: abbreviation, Type: TEXT
+  Column: full_name, Type: TEXT
+  Column: city, Type: TEXT
+
+Table: flights
+  Column: id, Type: INTEGER
+  Column: origin_airport_id, Type: INTEGER
+  Column: destination_airport_id, Type: INTEGER
+  Column: year, Type: INTEGER
+  Column: month, Type: INTEGER
+  Column: day, Type: INTEGER
+  Column: hour, Type: INTEGER
+  Column: minute, Type: INTEGER
+
+Table: passengers
+  Column: flight_id, Type: INTEGER
+  Column: passport_number, Type: INTEGER
+  Column: seat, Type: TEXT
+
+Table: phone_calls
+  Column: id, Type: INTEGER
+  Column: caller, Type: TEXT
+  Column: receiver, Type: TEXT
+  Column: year, Type: INTEGER
+  Column: month, Type: INTEGER
+  Column: day, Type: INTEGER
+  Column: duration, Type: INTEGER
+
+Table: people
+  Column: id, Type: INTEGER
+  Column: name, Type: TEXT
+  Column: phone_number, Type: TEXT
+  Column: passport_number, Type: INTEGER
+  Column: license_plate, Type: TEXT
+
+Table: bakery_security_logs
+  Column: id, Type: INTEGER
+  Column: year, Type: INTEGER
+  Column: month, Type: INTEGER
+  Column: day, Type: INTEGER
+  Column: hour, Type: INTEGER
+  Column: minute, Type: INTEGER
+  Column: activity, Type: TEXT
+  Column: license_plate, Type: TEXT
+
